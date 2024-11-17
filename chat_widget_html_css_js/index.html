@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="chat-widget" id="chat-widget">
+        <button class="chat-button" id="chat-button" title="Open Chat">
+            <i class="fas fa-comment-alt"></i>
+        </button>
+    </div>
+
+    <div class="chat-page" id="chat-page">
+        <div class="chat-header">
+            <h2 class="chatbot-title"><b>NexTalk</b></h2>
+            <button class="close-chat" id="close-chat" title="Close Chat">
+                <span class="close-icon">&times;</span>
+            </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div id="messages-end"></div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-field" placeholder="Type your message..." />
+            <button class="send-message" id="send-message" title="Send Message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
